@@ -17,7 +17,7 @@ class Test_power(unittest.TestCase):
     def test_1(self):
         data = [9,2]
         result = power(9,2)
-        self.assertEqual(result, 81)
+        self.assertEqual(result, 80)
 
 if __name__ == '__main__':
     unittest.main()
