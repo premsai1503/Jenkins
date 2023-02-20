@@ -9,7 +9,7 @@ agent any
         stage('Build Code') {
             steps {
                 sh "chmod u+x Prog1.py"
-                sh "./Prog1.py"
+                sh "./IMT2019067_prog.py"
             }
         }
      stage('Test Code') {
