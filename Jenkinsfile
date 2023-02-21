@@ -8,7 +8,7 @@ agent any
         }
         stage('Build Code') {
             steps {
-                sh "IMT2019067_prog.py"
+                sh "chmod 777 IMT2019067_prog.py"
                 sh "./IMT2019067_prog.py"
             }
         }
