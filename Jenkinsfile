@@ -3,13 +3,13 @@ agent any
     stages {
         stage('Clone Git') {
             steps {
-                git 'https://github.com/BThangaraju/Jenkins.git'
+                git 'https://github.com/premsai1503/Jenkins.git'
             }
         }
         stage('Build Code') {
             steps {
-                sh "ls -al"
-                sh "echo 'list of files' "
+                sh "chmod 777 IMT2019067_prog.py"
+                sh "./IMT2019067_prog.py"
             }
         }
      stage('Test Code') {
