@@ -1,18 +1,18 @@
 pipeline { 
 agent any
     stages {
-        stage('Clone Git') {
+        stage('Cloning Git') {
             steps {
                 git 'https://github.com/premsai1503/Jenkins.git'
             }
         }
-        stage('Build Code') {
+        stage('Building Code') {
             steps {
                 sh "chmod 777 IMT2019067_prog.py"
                 sh "./IMT2019067_prog.py"
             }
         }
-     stage('Test Code') {
+     stage('Testing Code') {
             steps {
                 sh "chmod u+x Test.py"
                 sh "./Test.py"
