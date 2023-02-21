@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+!/usr/bin/python3
 # Test case for adding two numbers
 import unittest
 
